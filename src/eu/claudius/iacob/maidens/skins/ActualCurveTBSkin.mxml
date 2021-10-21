@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:SparkButtonSkin xmlns:fx="http://ns.adobe.com/mxml/2009"
+                   xmlns:s="library://ns.adobe.com/flex/spark"
+                   xmlns:mx="library://ns.adobe.com/flex/mx"
+                   minHeight="20"
+                   minWidth="20">
+
+    <!-- host component -->
+    <fx:Metadata>
+		<![CDATA[
+        [HostComponent("spark.components.ToggleButton")]
+        ]]>
+	</fx:Metadata>
+
+    <fx:Script>
+        <![CDATA[
+        import eu.claudius.iacob.maidens.Colors;
+        ]]>
+    </fx:Script>
+
+    <!-- states -->
+    <s:states>
+        <mx:State name="up"/>
+        <mx:State name="over" stateGroups="overStates"/>
+        <mx:State name="down" stateGroups="downStates"/>
+        <mx:State name="disabled" stateGroups="disabledStates"/>
+        <mx:State name="upAndSelected" stateGroups="selectedStates, selectedUpStates"/>
+        <mx:State name="overAndSelected" stateGroups="overStates, selectedStates"/>
+        <mx:State name="downAndSelected" stateGroups="downStates, selectedStates"/>
+        <mx:State name="disabledAndSelected" stateGroups="selectedUpStates, disabledStates, selectedStates"/>
+    </s:states>
+
+    <!-- Fill -->
+    <s:Rect id="fill" left="0" right="0" top="0" bottom="0">
+        <s:fill>
+            <mx:SolidColor color="{Colors.CHROME_COLOR}" />
+        </s:fill>
+    </s:Rect>
+
+    <!-- Specific icon for OFF state -->
+    <s:Graphic version="1.0" viewHeight="1001" viewWidth="1001" verticalCenter="0" horizontalCenter="0"
+               scaleX="{width / 1001}" scaleY="{height / 1001}"
+               visible.up="true" visible.over="true" visible.disabled="true" visible.down="true"
+               visible.selectedStates="false">
+        <s:Group>
+            <s:Path winding="nonZero" data="M1054.45 0L45.5469 0C19.7656 0 0 20.625 0 45.5469L0 1055.31C0 1081.09 20.625 1100.86 45.5469 1100.86L1055.31 1100.86C1081.09 1100.86 1100.86 1080.23 1100.86 1055.31L1100.86 45.5469C1100 20.625 1079.38 0 1054.45 0ZM1053.59 1053.59L610.412
+ 1053.59 610.412 1018.83 553.697 1018.83 553.697 1053.59 411.49 1053.59 411.49 1018.83 354.812 1018.83 354.812 1053.59 212.592 1053.59 212.592 1018.83 155.94 1018.83 155.94 1053.59 46.4063 1053.59 46.4063 945.438 82.6016 945.438 82.6016 888.813
+ 46.4063 888.813 46.4063 746.542 82.6016 746.542 82.6016 689.954 46.4063 689.954 46.4063 547.672 82.6016 547.672 82.6016 491.038 46.4063 491.038 46.4063 46.4063 1053.59 46.4063 1053.59 1053.59Z">
+                <s:fill>
+                    <mx:SolidColor color="{Colors.PRIMARY_COLOR_ALTERNATE}"
+                                   color.overStates="{Colors.PRIMARY_COLOR}"
+                                   alpha.disabledStates="0.4"/>
+                </s:fill>
+            </s:Path>
+            <s:Group x="167.396" y="280.669">
+                <s:Path winding="nonZero" data="M320.925 383.005L361.624 295.726 361.624 145.273C361.624 136.909 352.355 130.053 341.037 130.053L169.269 130.053C157.997 130.053 149.106 136.909 149.106 145.273L149.106 458.188 20.5767 458.188C9.28955 458.188 0 465.064 0 473.408L0 533.203
+ 41.1519 533.203 41.1519 488.605 189.825 488.605 189.825 260.482 320.925 260.482 320.925 383.005Z">
+                    <s:fill>
+                        <mx:SolidColor color="{Colors.PRIMARY_COLOR_ALTERNATE}"
+                                       color.overStates="{Colors.PRIMARY_COLOR}"
+                                       alpha.disabledStates="0.4"/>
+                    </s:fill>
+                </s:Path>
+                <s:Path winding="nonZero"
+                        data="M764.504 0L644.112 0 595.261 104.765 595.261 253.254 526.021 253.254 511.829 283.685 595.287 283.685 636.411 283.685 636.411 130.448 743.967 130.448 743.967 386.869 785.069 386.869 785.069 15.207C785.069 6.87598 775.808 0 764.504 0Z">
+                    <s:fill>
+                        <mx:SolidColor color="{Colors.PRIMARY_COLOR_ALTERNATE}"
+                                       color.overStates="{Colors.PRIMARY_COLOR}"
+                                       alpha.disabledStates="0.4"/>
+                    </s:fill>
+                </s:Path>
+                <s:Path winding="nonZero" data="M454.396 406.849L487.285 406.849 487.285 336.321 454.396 406.849Z">
+                    <s:fill>
+                        <mx:SolidColor color="{Colors.PRIMARY_COLOR_ALTERNATE}"
+                                       color.overStates="{Colors.PRIMARY_COLOR}"
+                                       alpha.disabledStates="0.4"/>
+                    </s:fill>
+                </s:Path>
+            </s:Group>
+            <s:Path winding="nonZero" data="M838.721 111.68L759.721 111.68 378.18 929.896 452.77 929.896">
+                <s:fill>
+                    <mx:SolidColor color="{Colors.PRIMARY_COLOR_ALTERNATE}" color.overStates="{Colors.PRIMARY_COLOR}"
+                                   alpha.disabledStates="0.4"/>
+                </s:fill>
+            </s:Path>
+        </s:Group>
+    </s:Graphic>
+
+    <!-- Specific icon for ON state -->
+    <s:Graphic version="1.0" verticalCenter="0" horizontalCenter="0" viewHeight="1001" viewWidth="1001"
+               scaleX="{width / 1001}" scaleY="{height / 1001}"
+               visible.upAndSelected="true" visible.overAndSelected="true" visible.disabledAndSelected="true"
+               visible.downAndSelected="true" visible.up="false" visible.over="false" visible.disabled="false"
+               visible.down="false">
+        <s:Group>
+            <s:Path winding="nonZero" data="M1054.45 0L45.5469 0C19.7656 0 0 20.625 0 45.5469L0 1055.31C0 1081.09 20.625 1100.86 45.5469 1100.86L1055.31 1100.86C1081.09 1100.86 1100.86 1080.23 1100.86 1055.31L1100.86 45.5469C1100 20.625 1079.38 0 1054.45 0ZM1053.59 1053.59L610.412
+ 1053.59 610.412 1018.83 553.697 1018.83 553.697 1053.59 411.49 1053.59 411.49 1018.83 354.812 1018.83 354.812 1053.59 212.592 1053.59 212.592 1018.83 155.94 1018.83 155.94 1053.59 46.4063 1053.59 46.4063 945.438 82.6016 945.438 82.6016 888.813
+ 46.4063 888.813 46.4063 746.542 82.6016 746.542 82.6016 689.954 46.4063 689.954 46.4063 547.672 82.6016 547.672 82.6016 491.038 46.4063 491.038 46.4063 46.4063 1053.59 46.4063 1053.59 1053.59Z">
+                <s:fill>
+                    <mx:SolidColor color="{Colors.PRIMARY_COLOR_ALTERNATE}" color.overStates="{Colors.PRIMARY_COLOR}"
+                                   alpha.disabledStates="0.4"/>
+                </s:fill>
+            </s:Path>
+            <s:Path winding="nonZero" data="M208.548 813.872L208.548 769.274 357.222 769.274 357.222 541.151 488.321 541.151 488.321 687.518 654.682 687.518 654.682 564.354 762.684 564.354 803.808 564.354 803.808 411.117 911.363 411.117 911.363 667.538 952.467 667.538 952.467 295.876
+C952.467 287.545 943.203 280.669 931.9 280.669L783.226 280.669C771.925 280.669 762.656 287.523 762.656 295.876L762.656 533.923 634.476 533.923C623.199 533.923 613.91 540.779 613.91 549.144L613.91 657.436 529.021 657.436 529.021 425.942C529.021
+ 417.578 519.752 410.722 508.434 410.722L336.665 410.722C325.394 410.722 316.503 417.578 316.503 425.942L316.503 738.855 187.973 738.855C176.686 738.855 167.396 745.733 167.396 754.077L167.396 813.872 208.548 813.872Z">
+                <s:fill>
+                    <mx:SolidColor color="{Colors.PRIMARY_COLOR_ALTERNATE}" color.overStates="{Colors.PRIMARY_COLOR}"
+                                   alpha.disabledStates="0.4"/>
+                </s:fill>
+            </s:Path>
+        </s:Group>
+    </s:Graphic>
+
+
+</s:SparkButtonSkin>

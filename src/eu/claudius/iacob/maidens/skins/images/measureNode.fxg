@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Graphic xmlns="http://ns.adobe.com/fxg/2008" xmlns:fxg="http://ns.adobe.com/fxg/2008" xmlns:d="http://ns.adobe.com/fxg/2008/dt" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:svg="http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-tiny.dtd" version="2.0">
+  <!--Unknown tag: metadata-->
+  <!--Unknown tag: defs-->
+  <!--Unknown tag: sodipodi:namedview-->
+  <Group id="g91">
+    <Group id="g89">
+      <Group id="g87">
+        <Path data="M19.4 1.8h-3.2H1.6C1.3 1.8 1 2 1 2.4S1.3 3 1.6 3h10.9v2.8H1.6C1.3 5.7 1 6 1 6.3S1.3 7 1.6 7h10.9v2.8H1.6 C1.3 9.7 1 10 1 10.3s0.3 0.6 0.6 0.6h10.9v2.8H1.6C1.3 13.7 1 14 1 14.3c0 0.3 0.3 0.6 0.6 0.6h10.9v2.8H1.6 C1.3 17.7 1 18 1 18.3s0.3 0.6 0.6 0.6h14.5h3.2c0.4 0 0.6-0.3 0.6-0.6v-16C20 2 19.7 1.8 19.4 1.8z M15.5 17.9h-1.8v-2.8h1.8 V17.9z M15.5 13.9h-1.8v-2.8h1.8V13.9z M15.5 9.8h-1.8V7.1h1.8V9.8z M15.5 5.8h-1.8V3h1.8V5.8z M18.7 17.9h-2V3h2V17.9z" winding="nonZero" id="path81">
+          <fill>
+            <SolidColor color="#ffffff" alpha="1"/>
+          </fill>
+        </Path>
+        <Ellipse x="10" y="12" width="2" height="2" id="circle83">
+          <fill>
+            <SolidColor color="#ffffff" alpha="1"/>
+          </fill>
+        </Ellipse>
+        <Ellipse x="10" y="7" width="2" height="2" id="circle85">
+          <fill>
+            <SolidColor color="#ffffff" alpha="1"/>
+          </fill>
+        </Ellipse>
+      </Group>
+    </Group>
+  </Group>
+</Graphic>

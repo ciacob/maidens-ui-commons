@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:SparkButtonSkin xmlns:fx="http://ns.adobe.com/mxml/2009"
+				   xmlns:s="library://ns.adobe.com/flex/spark"
+				   xmlns:mx="library://ns.adobe.com/flex/mx">
+	<!-- host component -->
+	<fx:Metadata>
+		[HostComponent("spark.components.Button")]
+	</fx:Metadata>
+
+	<fx:Script><![CDATA[
+		import eu.claudius.iacob.maidens.Colors;
+		]]>
+    </fx:Script>
+
+	<!-- states -->
+	<s:states>
+		<mx:State name="up"/>
+		<mx:State name="over" stateGroups="overStates"/>
+		<mx:State name="down" stateGroups="downStates"/>
+		<mx:State name="disabled" stateGroups="disabledStates"/>
+	</s:states>
+
+	<!-- Fill -->
+	<!--- @private -->
+	<s:Rect id="fill" left="0" right="0" top="0" bottom="0">
+		<s:fill>
+			<mx:SolidColor color="{Colors.CHROME_COLOR}"/>
+		</s:fill>
+		<s:stroke>
+			<mx:SolidColorStroke weight="1" color="{Colors.PRIMARY_COLOR_ALTERNATE}"
+								color.overStates="{Colors.PRIMARY_COLOR}" alpha.disabledStates="0.4"/>
+		</s:stroke>
+	</s:Rect>
+	
+	<!-- Specific icon -->
+	<s:Graphic verticalCenter="0" horizontalCenter="0" version="1.0"
+			   viewHeight="28" viewWidth="28"
+			   scaleX="{(width / 28) * 0.6}" scaleY="{(height / 28) * 0.6}">
+		<s:Group x="4.8916" y="4.99414">
+			<s:Path winding="nonZero" data="M10.8193 14.0264L18.2168 14.0264 18.2168 18.0117 6.83691 18.0117 10.8193 14.0264ZM0 14.2598L11.0664 3.18896 14.8184 6.94141 3.75195 18.0117 0 18.0117 0 14.2598ZM17.7266 4.03271L15.8994 5.86377 12.1465 2.11133 13.9746 0.280273C14.1611 0.0947266
+ 14.415 -0.00634766 14.6787 0.000488281 14.9414 -0.00732422 15.1963 0.09375 15.3818 0.280273L17.7168 2.61523C18.1006 3.00488 18.1006 3.62988 17.7168 4.01953L17.7266 4.03271Z">
+				<s:fill>
+					<mx:SolidColor color="{Colors.PRIMARY_COLOR_ALTERNATE}"
+								   color.overStates="{Colors.PRIMARY_COLOR}" alpha.disabledStates="0.4"/>
+				</s:fill>
+			</s:Path>
+		</s:Group>
+	</s:Graphic>
+</s:SparkButtonSkin>

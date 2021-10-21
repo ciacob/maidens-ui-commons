@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:SparkButtonSkin xmlns:fx="http://ns.adobe.com/mxml/2009"
+                   xmlns:s="library://ns.adobe.com/flex/spark"
+                   xmlns:mx="library://ns.adobe.com/flex/mx"
+                   minHeight="20"
+                   minWidth="20">
+
+    <!-- host component -->
+    <fx:Metadata>
+		<![CDATA[
+        [HostComponent("spark.components.ToggleButton")]
+        ]]>
+    </fx:Metadata>
+
+    <fx:Script>
+        <![CDATA[
+        import eu.claudius.iacob.maidens.Colors;
+        ]]>
+    </fx:Script>
+
+    <!-- states -->
+    <s:states>
+        <mx:State name="up"/>
+        <mx:State name="over" stateGroups="overStates"/>
+        <mx:State name="down" stateGroups="downStates"/>
+        <mx:State name="disabled" stateGroups="disabledStates"/>
+        <mx:State name="upAndSelected" stateGroups="selectedStates, selectedUpStates"/>
+        <mx:State name="overAndSelected" stateGroups="overStates, selectedStates"/>
+        <mx:State name="downAndSelected" stateGroups="downStates, selectedStates"/>
+        <mx:State name="disabledAndSelected" stateGroups="selectedUpStates, disabledStates, selectedStates"/>
+    </s:states>
+
+    <!-- Fill -->
+    <s:Rect id="fill" left="0" right="0" top="0" bottom="0">
+        <s:fill>
+            <mx:SolidColor color="{Colors.CHROME_COLOR}" />
+        </s:fill>
+    </s:Rect>
+
+    <!-- Specific icon for OFF state -->
+    <s:Graphic version="1.0" viewHeight="1001" viewWidth="1001" verticalCenter="0" horizontalCenter="0"
+               scaleX="{width / 1001}" scaleY="{height / 1001}"
+               visible.up="true" visible.over="true" visible.disabled="true" visible.down="true"
+               visible.selectedStates="false">
+        <s:Group>
+            <s:Path winding="nonZero" data="M1054.45 0L45.5469 0C19.7656 0 0 20.625 0 45.5469L0 1055.31C0 1081.09 20.625 1100.86 45.5469 1100.86L1055.31 1100.86C1081.09 1100.86 1100.86 1080.23 1100.86 1055.31L1100.86 45.5469C1100 20.625 1079.38 0 1054.45 0ZM1053.59 1053.59L610.412
+ 1053.59 610.412 1018.83 553.697 1018.83 553.697 1053.59 411.49 1053.59 411.49 1018.83 354.812 1018.83 354.812 1053.59 212.592 1053.59 212.592 1018.83 155.94 1018.83 155.94 1053.59 46.4063 1053.59 46.4063 945.438 82.6016 945.438 82.6016 888.813
+ 46.4063 888.813 46.4063 746.542 82.6016 746.542 82.6016 689.954 46.4063 689.954 46.4063 547.672 82.6016 547.672 82.6016 491.038 46.4063 491.038 46.4063 46.4063 1053.59 46.4063 1053.59 1053.59Z">
+                <s:fill>
+                    <mx:SolidColor color="{Colors.PRIMARY_COLOR_ALTERNATE}"
+                                   color.overStates="{Colors.PRIMARY_COLOR}"
+                                   alpha.disabledStates="0.4"/>
+                </s:fill>
+            </s:Path>
+            <s:Path winding="nonZero" data="M838.721 111.68L759.721 111.68 378.18 929.896 452.77 929.896">
+                <s:fill>
+                    <mx:SolidColor color="{Colors.PRIMARY_COLOR_ALTERNATE}"
+                                   color.overStates="{Colors.PRIMARY_COLOR}"
+                                   alpha.disabledStates="0.4"/>
+                </s:fill>
+            </s:Path>
+            <s:Group x="177.927" y="344.232">
+                <s:Path winding="nonZero" data="M194.95 330.299L372.94 189.601 458.358 6.42236C447.42 2.27637 435.565 0 423.174 0 368.347 0 323.9 44.4468 323.9 99.2749 323.9 106.629 324.707 113.793 326.224 120.691L141.272 266.892C128.517 260.928 114.287 257.588 99.2749 257.588 44.4468
+ 257.588 0 302.037 0 356.865 0 411.692 44.4468 456.139 99.2749 456.139 154.104 456.139 198.55 411.692 198.55 356.865 198.55 347.664 197.292 338.755 194.95 330.299Z">
+                    <s:fill>
+                        <mx:SolidColor color="{Colors.PRIMARY_COLOR_ALTERNATE}"
+                                       color.overStates="{Colors.PRIMARY_COLOR}"
+                                       alpha.disabledStates="0.4"/>
+                    </s:fill>
+                </s:Path>
+                <s:Path winding="nonZero" data="M695.729 192.634C677.759 192.634 660.905 197.409 646.364 205.759L533.261 129.616 497.418 205.601 598.185 273.41C597.053 279.404 596.456 285.585 596.456 291.909 596.456 346.737 640.901 391.184 695.729 391.184 750.558 391.184 795.005 346.737
+ 795.005 291.909 795.005 237.081 750.558 192.634 695.729 192.634Z">
+                    <s:fill>
+                        <mx:SolidColor color="{Colors.PRIMARY_COLOR_ALTERNATE}"
+                                       color.overStates="{Colors.PRIMARY_COLOR}"
+                                       alpha.disabledStates="0.4"/>
+                    </s:fill>
+                </s:Path>
+            </s:Group>
+        </s:Group>
+    </s:Graphic>
+
+    <!-- Specific icon for ON state -->
+    <s:Graphic version="1.0" verticalCenter="0" horizontalCenter="0" viewHeight="1001" viewWidth="1001"
+               scaleX="{width / 1001}" scaleY="{height / 1001}"
+               visible.upAndSelected="true" visible.overAndSelected="true" visible.disabledAndSelected="true"
+               visible.downAndSelected="true" visible.up="false" visible.over="false" visible.disabled="false"
+               visible.down="false">
+        <s:Group>
+            <s:Path winding="nonZero" data="M1054.45 0L45.5469 0C19.7656 0 0 20.625 0 45.5469L0 1055.31C0 1081.09 20.625 1100.86 45.5469 1100.86L1055.31 1100.86C1081.09 1100.86 1100.86 1080.23 1100.86 1055.31L1100.86 45.5469C1100 20.625 1079.38 0 1054.45 0ZM1053.59 1053.59L610.412
+ 1053.59 610.412 1018.83 553.697 1018.83 553.697 1053.59 411.49 1053.59 411.49 1018.83 354.812 1018.83 354.812 1053.59 212.592 1053.59 212.592 1018.83 155.94 1018.83 155.94 1053.59 46.4063 1053.59 46.4063 945.438 82.6016 945.438 82.6016 888.813
+ 46.4063 888.813 46.4063 746.542 82.6016 746.542 82.6016 689.954 46.4063 689.954 46.4063 547.672 82.6016 547.672 82.6016 491.038 46.4063 491.038 46.4063 46.4063 1053.59 46.4063 1053.59 1053.59Z" >
+                <s:fill>
+                    <mx:SolidColor color="{Colors.PRIMARY_COLOR_ALTERNATE}" color.overStates="{Colors.PRIMARY_COLOR}"
+                                   alpha.disabledStates="0.4"/>
+                </s:fill>
+            </s:Path>
+            <s:Group x="177.927" y="344.232">
+                <s:Path winding="nonZero" data="M706.752 296.64C693.918 315.64 668.114 320.641 649.113 307.807L402.307 141.117C383.305 128.285 378.305 102.479 391.138 83.4785L391.138 83.4785C403.971 64.478 429.777 59.478 448.777 72.3105L695.584 239.001C714.585 251.834 719.585 277.639
+ 706.752 296.64L706.752 296.64Z" >
+                    <s:fill>
+                        <mx:SolidColor color="{Colors.PRIMARY_COLOR_ALTERNATE}" color.overStates="{Colors.PRIMARY_COLOR}"
+                                       alpha.disabledStates="0.4"/>
+                    </s:fill>
+                </s:Path>
+                <s:Path winding="nonZero" data="M456.33 70.7627C470.547 88.751 467.493 114.857 449.505 129.077L125.238 385.407C107.251 399.624 81.144 396.57 66.9248 378.583L66.9248 378.583C52.7065 360.595 55.7612 334.488 73.7485 320.269L398.016 63.9404C416.004 49.7212 442.111 52.7764
+ 456.33 70.7627L456.33 70.7627Z" >
+                    <s:fill>
+                        <mx:SolidColor color="{Colors.PRIMARY_COLOR_ALTERNATE}" color.overStates="{Colors.PRIMARY_COLOR}"
+                                       alpha.disabledStates="0.4"/>
+                    </s:fill>
+                </s:Path>
+                <s:Ellipse x="323.9" width="198.55" height="198.55">
+                    <s:fill>
+                        <mx:SolidColor color="{Colors.PRIMARY_COLOR_ALTERNATE}" color.overStates="{Colors.PRIMARY_COLOR}"
+                                       alpha.disabledStates="0.4"/>
+                    </s:fill>
+                </s:Ellipse>
+                <s:Ellipse y="257.59" width="198.55" height="198.55">
+                    <s:fill>
+                        <mx:SolidColor color="{Colors.PRIMARY_COLOR_ALTERNATE}" color.overStates="{Colors.PRIMARY_COLOR}"
+                                       alpha.disabledStates="0.4"/>
+                    </s:fill>
+                </s:Ellipse>
+                <s:Ellipse x="596.456" y="192.634" width="198.55" height="198.55">
+                    <s:fill>
+                        <mx:SolidColor color="{Colors.PRIMARY_COLOR_ALTERNATE}" color.overStates="{Colors.PRIMARY_COLOR}"
+                                       alpha.disabledStates="0.4"/>
+                    </s:fill>
+                </s:Ellipse>
+            </s:Group>
+        </s:Group>
+    </s:Graphic>
+
+</s:SparkButtonSkin>

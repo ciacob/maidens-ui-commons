@@ -1,0 +1,224 @@
+/* CSS file */
+@namespace s "library://ns.adobe.com/flex/spark";
+@namespace mx "library://ns.adobe.com/flex/mx";
+@namespace mx_internal "mx.core.mx_internal";
+
+@font-face {
+	fontFamily:"Maidens";
+	src: url("../typography/Maidens.ttf");
+	fontStyle: normal;
+	fontWeight: normal; 
+	advancedAntiAliasing: true;
+	embedAsCFF: false;
+}
+
+@font-face {
+	fontFamily:"Maidens";
+	src: url("../typography/Maidens.ttf");
+	fontStyle: normal;
+	fontWeight: normal;
+	embedAsCFF: true;
+}
+
+@font-face {
+	fontFamily:"Maidens";
+	src: url("../typography/Maidens Headers.ttf");
+	fontStyle: normal;
+	fontWeight: bold; 
+	advancedAntiAliasing: true;
+	embedAsCFF: false;
+}
+
+/**
+ * Global defaults
+ */
+global {
+	fontFamily: "Maidens";
+	chromeColor: #E5E3E3;
+	borderColor: #BCBCBC;
+	color: #474747;
+	disabledColor: #898989;
+	dividerColor: #BCBCBC;
+	focusColor: #ED7D03;
+	iconColor: #ED7D03;
+	themeColor: #ED7D03;
+	selectionColor: #ED7D03;
+	textSelectedColor: #ffffff;
+	rollOverColor: #BCBCBC;
+	textRollOverColor: #000000;
+	selectionDisabledColor: #474747;
+	horizontalGridLineColor: #BCBCBC;
+	verticalGridLineColor: #BCBCBC;
+	modalTransparencyColor: #E5E3E3;
+	disabledOverlayAlpha: 0.2;
+	modalTransparency: 0.2;
+	modalTransparencyBlur: 0;
+	modalTransparencyDuration: 0;
+}
+
+.pageNavButtons {
+	fontSize: 14px;
+	paddingLeft:0;
+	paddingRight:0;
+	paddingBottom: 3px;
+}
+.playbackButton {
+	fontSize: 10px;
+	paddingLeft:0;
+	paddingRight:0;
+}
+.stopButton {
+	fontSize: 10px;
+	paddingLeft:0;
+	paddingRight:0;
+}
+
+/* Elements of the editor component */
+.sectionHeader {
+	fontSize: 14px;
+}
+.blockSection {
+	borderVisible: true;
+	borderStyle: solid;
+}
+.editorNote {
+	fontSize: 11.7px;
+	letterSpacing: 1.2;
+	lineHeight:14px;
+}
+.editorLabel {
+	paddingTop: 13px;
+	paddingBottom: 0;
+	fontSize: 13px;
+}
+.editorHeader {
+	fontSize: 16px;
+	textAlign: center;
+}
+.thickText {
+	fontThickness: 128;
+}
+.timeSignatureDigit {
+	font-size: 18px;
+	fontWeight: normal;
+}
+
+/* Elements of the prompt component */
+.tinyText {
+	textDecoration: none;
+	fontWeight: normal;
+	cornerRadius: 0;
+	backgroundAlpha: 0.7;
+	paddingTop:0;
+	paddingBottom:0;
+	fontSize:11px;
+	letterSpacing: 1;
+}
+
+/* Windows related styling */
+.tintorettoBackground, .secondaryWindow {
+	borderSkin: ClassReference("eu.claudius.iacob.maidens.skins.TintorettoConcertoBackground");
+}
+.chromeWindow {
+	borderStyle: solid;
+	borderColor: #BCBCBC;
+	titleBarBackgroundSkin: ClassReference("eu.claudius.iacob.maidens.skins.ApplicationTitleBarBackgroundSkin");
+	titleBarButtonPadding: 20;
+	buttonPadding: 15;
+	closeButtonSkin: ClassReference("eu.claudius.iacob.maidens.skins.WindowCloseButtonSkin");
+	maximizeButtonSkin: ClassReference("eu.claudius.iacob.maidens.skins.WindowMaximizeButtonSkin");
+	restoreButtonSkin: ClassReference("eu.claudius.iacob.maidens.skins.WindowRestoreButtonSkin");
+	minimizeButtonSkin: ClassReference("eu.claudius.iacob.maidens.skins.WindowMinimizeButtonSkin");
+	headerHeight: 35px;
+	titleBarColors: #E5E3E3,#E5E3E3;
+	titleBarCornerRadius: 0px;
+	titleBarBorderColor: #E5E3E3;
+	titleBarBorderAlpha: 1;
+	titleBarBorderThickness: 1px;
+	titleTextStyleName: "chromeWindowTitleStyle";
+	statusBarBackgroundSkin: ClassReference("eu.claudius.iacob.maidens.skins.StatusBarBackgroundSkin");
+	gripperPadding: 3px;
+	gripperStyleName: "chromeWindowGripperStyle";
+	statusBarColors: #E5E3E3,#E5E3E3;
+	statusBarCornerRadius: 0px;
+	statusBarBorderColor: #E5E3E3;
+	statusBarBorderAlpha: 1;
+	statusBarBorderThickness: 1px;
+	statusBarPaddingLeft: 10px;
+	statusBarPaddingRight: 20px;
+	statusBarPaddingTop: 1px;
+	statusBarPaddingBottom: 4px;
+	statusTextStyleName : "chromeWindowStatusStyle";
+	fontThickness: 100;
+	letterSpacing: 1;
+	lineHeight: 18px;
+}
+.chromeWindowTitleStyle {
+	fontSize: 14px;
+	color: #474747;
+	letterSpacing: 1;
+	textIndent:10px;
+}
+.chromeWindowStatusStyle {
+	letterSpacing: 0;
+	fontSize: 13px;
+	color: #474747;
+}
+.chromeWindowGripperStyle {
+	skin: ClassReference("eu.claudius.iacob.maidens.skins.WindowGripperSkin");
+}
+
+/* Amendments to default skin */
+mx|Menu {
+	paddingTop: 2px;
+	paddingBottom: 3px;
+	leftIconGap: 27px;
+	rightIconGap: 27px;
+}
+mx|MenuBar {
+}
+mx|Tree {
+	textIndent:10px;
+	paddingTop: 7px;
+	paddingBottom: 5px;
+}
+mx|ComboBox, mx|TextInput, mx|TextArea, mx|Button, mx|NumericStepper {
+	padding-top:5px;
+	paddingBottom:4px;
+}
+mx|TextInput, mx|TextArea {
+	padding-left:4px;
+	padding-right:4px;
+}
+
+mx|TabBar {
+	tabHeight: 28px;
+	tabStyleName: 'maidensTabStyleName';
+}
+.maidensTabStyleName {
+	paddingLeft: 12px;
+	paddingRight: 21px;
+}
+mx|ToolTip {
+	padding-left: 5px;
+	padding-right: 5px;
+	paddingTop: 2px;
+	paddingBottom: 3px;
+	font-size: 13px;
+	cornerRadius: 0;
+}
+.sliderEnforcer {
+	borderStyle: outset;
+	backgroundColor: #E5E3E3;
+	borderAlpha: 0.7;
+	backgroundAlpha: 0.65;
+}
+.callToActionText {
+	fontSize: 15px;
+	letterSpacing: 0.5;
+	textAlign:center;
+	paddingTop: 0;
+	paddingBottom: 0;
+	paddingLeft: 0;
+	paddingRight: 0;
+}

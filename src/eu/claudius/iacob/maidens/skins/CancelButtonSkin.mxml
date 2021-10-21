@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:SparkButtonSkin xmlns:fx="http://ns.adobe.com/mxml/2009"
+				   xmlns:s="library://ns.adobe.com/flex/spark"
+				   xmlns:mx="library://ns.adobe.com/flex/mx">
+	<!-- host component -->
+	<fx:Metadata>
+		[HostComponent("spark.components.Button")]
+	</fx:Metadata>
+
+	<fx:Script><![CDATA[
+		import eu.claudius.iacob.maidens.Colors;
+		]]>
+    </fx:Script>
+
+	<!-- states -->
+	<s:states>
+		<mx:State name="up"/>
+		<mx:State name="over" stateGroups="overStates"/>
+		<mx:State name="down" stateGroups="downStates"/>
+		<mx:State name="disabled" stateGroups="disabledStates"/>
+	</s:states>
+
+	<!-- Fill -->
+	<!--- @private -->
+	<s:Rect id="fill" left="0" right="0" top="0" bottom="0">
+		<s:fill>
+			<mx:SolidColor color="{Colors.CHROME_COLOR}"/>
+		</s:fill>
+		<s:stroke>
+			<mx:SolidColorStroke weight="1" color="{Colors.PRIMARY_COLOR_ALTERNATE}"
+								color.overStates="{Colors.PRIMARY_COLOR}" alpha.disabledStates="0.4"/>
+		</s:stroke>
+	</s:Rect>
+	
+	<!-- Specific icon -->
+	<s:Graphic verticalCenter="0" horizontalCenter="0" version="1.0"
+			   viewHeight="28" viewWidth="28"
+			   scaleX="{(width / 28) * 0.6}" scaleY="{(height / 28) * 0.6}">
+		<s:Group x="3.86621" y="3.87988">
+			<s:Path winding="nonZero" data="M9.07813 4.96484L4.96484 0.852051 4.96484 0.852051C3.8291 -0.28418 1.9873 -0.28418 0.851563 0.852051L0.851563 0.852051 0.851563 0.852051C-0.28418 1.98779 -0.28418 3.8291 0.851563 4.96484L4.96484 9.07813 4.96484 9.07813C5.24902 9.3623 5.24902
+ 9.82324 4.96484 10.1074L0.851563 14.2207 0.851563 14.2207C-0.28418 15.3564 -0.28418 17.1982 0.851563 18.334L0.851563 18.334 0.851563 18.334C1.9873 19.4697 3.8291 19.4697 4.96484 18.334L9.07813 14.2207 9.07813 14.2207C9.3623 13.9365 9.82324 13.9365
+ 10.1074 14.2207L14.2207 18.334 14.2207 18.334C15.3564 19.4697 17.1982 19.4697 18.334 18.334L18.334 18.334 18.334 18.334C19.4697 17.1982 19.4697 15.3564 18.334 14.2207L14.2207 10.1074 14.2207 10.1074C13.9365 9.82324 13.9365 9.3623 14.2207 9.07813
+L18.334 4.96484 18.334 4.96484C19.4697 3.8291 19.4697 1.98779 18.334 0.852051L18.334 0.852051 18.334 0.852051C17.1982 -0.28418 15.3564 -0.28418 14.2207 0.852051L10.1074 4.96484 10.1074 4.96484C9.82324 5.24902 9.3623 5.24902 9.07813 4.96484Z">
+				<s:fill>
+					<mx:SolidColor color="{Colors.PRIMARY_COLOR_ALTERNATE}"
+								   color.overStates="{Colors.PRIMARY_COLOR}" alpha.disabledStates="0.4"/>
+				</s:fill>
+			</s:Path>
+		</s:Group>
+	</s:Graphic>
+</s:SparkButtonSkin>

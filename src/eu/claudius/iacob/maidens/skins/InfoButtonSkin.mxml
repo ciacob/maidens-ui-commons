@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Skin xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:s="library://ns.adobe.com/flex/spark"
+        xmlns:mx="library://ns.adobe.com/flex/mx"
+        alpha.disabledStates="0.5"
+        minHeight="22"
+        minWidth="22">
+
+    <!-- host component -->
+    <fx:Metadata>
+        [HostComponent("spark.components.Button")]
+    </fx:Metadata>
+
+    <fx:Script>
+        <![CDATA[
+            import eu.claudius.iacob.maidens.Colors;
+
+            private static const ICON_SIZE:int = 34;
+        ]]>
+    </fx:Script>
+
+    <!-- states -->
+    <s:states>
+        <mx:State name="up"/>
+        <mx:State name="over" stateGroups="overStates"/>
+        <mx:State name="down" stateGroups="downStates"/>
+        <mx:State name="disabled" stateGroups="disabledStates"/>
+        <mx:State name="upAndSelected" stateGroups="selectedStates, selectedUpStates"/>
+        <mx:State name="overAndSelected" stateGroups="overStates, selectedStates"/>
+        <mx:State name="downAndSelected" stateGroups="downStates, selectedStates"/>
+        <mx:State name="disabledAndSelected" stateGroups="selectedUpStates, disabledStates, selectedStates"/>
+    </s:states>
+
+    <!-- Fill -->
+    <s:Rect id="fill" left="0" right="0" top="0" bottom="0">
+        <s:fill>
+            <mx:SolidColor color="{Colors.CHROME_COLOR}" />
+        </s:fill>
+        <s:stroke>
+            <mx:SolidColorStroke color="{Colors.PRIMARY_COLOR_ALTERNATE}"
+                           color.overStates="{Colors.PRIMARY_COLOR}" alpha.disabledStates="0.4"/>
+        </s:stroke>
+    </s:Rect>
+
+    <!-- Specific icon -->
+    <s:Graphic version="1.0" verticalCenter="0" horizontalCenter="0" viewHeight="{ICON_SIZE}" viewWidth="{ICON_SIZE}"
+               scaleX="{(width / ICON_SIZE) * 0.5}" scaleY="{(height / ICON_SIZE) * 0.5}">
+        <s:Group>
+            <s:Path winding="nonZero" data="M17.1001 0C7.65576 0 0 7.65576 0 17.1001 0 26.5444 7.65576 34.1997 17.1001 34.1997 26.5444 34.1997 34.1997 26.5444 34.1997 17.1001 34.1997 7.65576 26.5444 0 17.1001 0ZM17.1001 6.29346C18.7788 6.29346 20.1401 7.65479 20.1401 9.3335 20.1401
+				  11.0127 18.7788 12.3735 17.1001 12.3735 15.4214 12.3735 14.0601 11.0127 14.0601 9.3335 14.0601 7.65479 15.4214 6.29346 17.1001 6.29346ZM21.6606 27.147C21.6606 27.5659 21.3198 27.7407 20.8999 27.7407L13.3003 27.7407C12.8804 27.7407 12.54 27.5659
+				  12.54 27.147L12.54 26.7661C12.54 26.3462 12.8804 25.8403 13.3003 25.8403L14.0601 25.8403 14.0601 16.3403 13.3003 16.3403C12.8804 16.3403 12.54 16.166 12.54 15.7466L12.54 15.3667C12.54 14.9468 12.8804 14.4399 13.3003 14.4399L19.3794 14.4399C19.7993
+				  14.4399 20.1401 14.9468 20.1401 15.3667L20.1401 15.7466 20.1401 25.8403 20.8999 25.8403C21.3198 25.8403 21.6606 26.3462 21.6606 26.7661L21.6606 27.147Z">
+                <s:fill>
+                    <mx:SolidColor color="{Colors.PRIMARY_COLOR_ALTERNATE}"
+                                   color.overStates="{Colors.PRIMARY_COLOR}" alpha.disabledStates="0.4"/>
+                </s:fill>
+            </s:Path>
+        </s:Group>
+    </s:Graphic>
+
+
+</s:Skin>

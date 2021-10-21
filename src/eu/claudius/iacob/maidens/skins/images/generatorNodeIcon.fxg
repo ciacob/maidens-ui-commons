@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Graphic xmlns="http://ns.adobe.com/fxg/2008" xmlns:fxg="http://ns.adobe.com/fxg/2008" xmlns:d="http://ns.adobe.com/fxg/2008/dt" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:svg="http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-tiny.dtd" version="2.0">
+  <!--Unknown tag: metadata-->
+  <!--Unknown tag: defs-->
+  <!--Unknown tag: sodipodi:namedview-->
+  <Path data="M11 15.1c0 0.2-0.2 0.4-0.4 0.4c-0.2 0-0.4-0.2-0.4-0.4s0.2-0.4 0.4-0.4S11 14.9 11 15.1z" winding="nonZero" id="path137">
+    <fill>
+      <SolidColor color="#ffffff" alpha="1"/>
+    </fill>
+  </Path>
+  <Path data="M6.5 10.6c0 0.2-0.2 0.4-0.4 0.4c-0.2 0-0.4-0.2-0.4-0.4c0-0.2 0.2-0.4 0.4-0.4S6.5 10.4 6.5 10.6z" winding="nonZero" id="path139">
+    <fill>
+      <SolidColor color="#ffffff" alpha="1"/>
+    </fill>
+  </Path>
+  <Path data="M8.8 8.3c0 0.2-0.2 0.4-0.4 0.4C8.2 8.7 8 8.5 8 8.3c0-0.2 0.2-0.4 0.4-0.4C8.6 7.9 8.8 8.1 8.8 8.3z" winding="nonZero" id="path141">
+    <fill>
+      <SolidColor color="#ffffff" alpha="1"/>
+    </fill>
+  </Path>
+  <Path data="M11 5.9c0 0.2-0.2 0.4-0.4 0.4c-0.2 0-0.4-0.2-0.4-0.4s0.2-0.4 0.4-0.4S11 5.7 11 5.9z" winding="nonZero" id="path143">
+    <fill>
+      <SolidColor color="#ffffff" alpha="1"/>
+    </fill>
+  </Path>
+  <Path data="M13.2 12.8c0 0.2-0.2 0.4-0.4 0.4c-0.2 0-0.4-0.2-0.4-0.4s0.2-0.4 0.4-0.4S13.2 12.6 13.2 12.8z" winding="nonZero" id="path145">
+    <fill>
+      <SolidColor color="#ffffff" alpha="1"/>
+    </fill>
+  </Path>
+  <Path data="M18.8 10.3l-7.9-7.9c-0.2-0.2-0.4-0.2-0.6 0l-7.9 7.9c-0.2 0.2-0.2 0.4 0 0.6l7.9 7.9c0.1 0.1 0.2 0.1 0.3 0.1 c0.1 0 0.2 0 0.3-0.1l7.9-7.9C18.9 10.7 18.9 10.5 18.8 10.3z M10.6 4.7c0.7 0 1.2 0.5 1.2 1.2s-0.5 1.2-1.2 1.2S9.4 6.6 9.4 5.9 S9.9 4.7 10.6 4.7z M6 11.8c-0.7 0-1.2-0.5-1.2-1.2S5.3 9.4 6 9.4s1.2 0.5 1.2 1.2S6.8 11.8 6 11.8z M8.3 9.5C7.7 9.5 7.2 9 7.2 8.3 s0.5-1.2 1.2-1.2c0.7 0 1.2 0.5 1.2 1.2S9 9.5 8.3 9.5z M10.6 16.3c-0.7 0-1.2-0.5-1.2-1.2s0.5-1.2 1.2-1.2s1.2 0.5 1.2 1.2 S11.3 16.3 10.6 16.3z M12.8 14c-0.7 0-1.2-0.5-1.2-1.2s0.5-1.2 1.2-1.2s1.2 0.5 1.2 1.2S13.5 14 12.8 14z M15.1 11.8 c-0.7 0-1.2-0.5-1.2-1.2s0.5-1.2 1.2-1.2s1.2 0.5 1.2 1.2S15.8 11.8 15.1 11.8z" winding="nonZero" id="path147">
+    <fill>
+      <SolidColor color="#ffffff" alpha="1"/>
+    </fill>
+  </Path>
+  <Path data="M15.6 10.6c0 0.2-0.2 0.4-0.4 0.4c-0.2 0-0.4-0.2-0.4-0.4c0-0.2 0.2-0.4 0.4-0.4S15.6 10.4 15.6 10.6z" winding="nonZero" id="path149">
+    <fill>
+      <SolidColor color="#ffffff" alpha="1"/>
+    </fill>
+  </Path>
+</Graphic>

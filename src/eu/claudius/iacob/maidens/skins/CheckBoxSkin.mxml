@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:SparkButtonSkin xmlns:fx="http://ns.adobe.com/mxml/2009"
+                   xmlns:s="library://ns.adobe.com/flex/spark"
+                   xmlns:fb="http://ns.adobe.com/flashbuilder/2009"
+                   alpha.disabledStates="0.5"
+                   xmlns:mx="library://ns.adobe.com/flex/mx"
+                   minHeight="25" minWidth="25">
+
+    <!-- host component -->
+    <fx:Metadata>
+    <![CDATA[
+        [HostComponent("spark.components.ToggleButton")]
+        ]]>
+    </fx:Metadata>
+
+    <!-- states -->
+    <s:states>
+        <mx:State name="up"/>
+        <mx:State name="over" stateGroups="overStates"/>
+        <mx:State name="down" stateGroups="downStates"/>
+        <mx:State name="disabled" stateGroups="disabledStates"/>
+        <mx:State name="upAndSelected" stateGroups="selectedStates, selectedUpStates"/>
+        <mx:State name="overAndSelected" stateGroups="overStates, selectedStates"/>
+        <mx:State name="downAndSelected" stateGroups="downStates, selectedStates"/>
+        <mx:State name="disabledAndSelected" stateGroups="selectedUpStates, disabledStates, selectedStates"/>
+    </s:states>
+
+
+    <!-- Fill -->
+    <!--- @private -->
+    <s:Rect id="fill" left="0" right="0" top="0" bottom="0">
+        <s:fill>
+            <mx:SolidColor color="#000000" alpha="0.0001"/>
+        </s:fill>
+    </s:Rect>
+
+    <!-- Checkbox icon, not ticked -->
+    <s:Graphic version="1.0" viewHeight="19.314" viewWidth="19.3135" verticalCenter="0" horizontalCenter="0"
+               scaleX="0.8" scaleY="0.8"
+               visible.up="true" visible.disabled="true" visible.selectedStates="false">
+        <s:Group>
+            <s:Rect x="1.40723" y="1.21924" width="16.75" height="16.75">
+                <s:fill>
+                    <mx:SolidColor color="{Colors.UI_WHITE}"/>
+                </s:fill>
+            </s:Rect>
+            <s:Path winding="nonZero" data="M16.2666 19.314L3.06885 19.314C1.37354 19.314 0 17.9404 0 16.2666L0 3.06934C0 1.37402 1.37354 0 3.06885 0L16.2666 0C17.9404 0 19.3135 1.37402 19.3135 3.06934L19.3135 16.2666C19.3135 17.9404 17.9404 19.314 16.2666 19.314ZM3.06885 2.14648
+				  C2.5752 2.14648 2.146 2.5542 2.146 3.06934L2.146 16.2666C2.146 16.7603 2.55371 17.189 3.06885 17.189L16.2666 17.189C16.7598 17.189 17.1885 16.7813 17.1885 16.2666L17.1885 3.06934C17.1885 2.5752 16.7813 2.14648 16.2666 2.14648L3.06885 2.14648Z">
+                <s:fill>
+                    <mx:SolidColor color="{Colors.BORDER_COLOR}" color.over="{Colors.CHROME_TEXT_COLOR}"
+                                   color.down="{Colors.CHROME_TEXT_COLOR}"
+                                   color.disabled="{Colors.CHROME_TEXT_MUTED_COLOR}"/>
+                </s:fill>
+            </s:Path>
+        </s:Group>
+    </s:Graphic>
+
+    <!-- Checkbox icon, ticked -->
+    <s:Graphic version="1.0" viewHeight="19.314" viewWidth="19.3135" verticalCenter="0" horizontalCenter="0"
+               visible.selectedStates="true" visible="false" scaleX="0.8" scaleY="0.8">
+        <s:Group>
+            <s:Rect x="1.40723" y="1.21924" width="16.75" height="16.75">
+                <s:fill>
+                    <mx:SolidColor color="{Colors.BORDER_COLOR}" color.disabled="{Colors.CHROME_TEXT_MUTED_COLOR}"/>
+                </s:fill>
+            </s:Rect>
+            <s:Path winding="nonZero" data="M16.2666 19.314L3.06885 19.314C1.37354 19.314 0 17.9404 0 16.2666L0 3.06934C0 1.37402 1.37354 0 3.06885 0L16.2666 0C17.9404 0 19.3135 1.37402 19.3135 3.06934L19.3135 16.2666C19.3135 17.9404 17.9404 19.314 16.2666 19.314ZM3.06885 2.14648
+				  C2.5752 2.14648 2.146 2.5542 2.146 3.06934L2.146 16.2666C2.146 16.7603 2.55371 17.189 3.06885 17.189L16.2666 17.189C16.7598 17.189 17.1885 16.7813 17.1885 16.2666L17.1885 3.06934C17.1885 2.5752 16.7813 2.14648 16.2666 2.14648L3.06885 2.14648Z
+				  M9.0127 13.9707L15.2793 7.7041C15.708 7.2749 15.708 6.60986 15.2793 6.18066 14.8496 5.75146 14.1846 5.75146 13.7559 6.18066L8.26172 11.6953 5.53662 8.9917C5.10742 8.5625 4.44238 8.5625 4.01318 8.9917 3.58398 9.4209 3.58398 10.0859 4.01318 10.5151
+				  L7.51074 13.9707C7.72559 14.1851 8.00439 14.2925 8.26172 14.2925 8.51953 14.2925 8.81982 14.1851 9.0127 13.9707Z">
+                <s:fill>
+                    <mx:SolidColor color="{Colors.BORDER_COLOR}" color.over="{Colors.CHROME_TEXT_COLOR}"
+                                   color.down="{Colors.CHROME_TEXT_COLOR}"
+                                   color.disabled="{Colors.CHROME_TEXT_MUTED_COLOR}"/>
+                </s:fill>
+            </s:Path>
+        </s:Group>
+    </s:Graphic>
+
+    <fx:Script><![CDATA[
+        import eu.claudius.iacob.maidens.Colors;
+        ]]></fx:Script>
+</s:SparkButtonSkin>

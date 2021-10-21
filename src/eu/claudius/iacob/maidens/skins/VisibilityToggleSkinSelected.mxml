@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<s:SparkButtonSkin xmlns:fx="http://ns.adobe.com/mxml/2009"
+                   xmlns:s="library://ns.adobe.com/flex/spark"
+                   xmlns:mx="library://ns.adobe.com/flex/mx"
+                   minHeight="20"
+                   minWidth="20">
+
+    <!-- host component -->
+    <fx:Metadata>
+		<![CDATA[
+        [HostComponent("spark.components.ToggleButton")]
+        ]]>
+	</fx:Metadata>
+
+    <fx:Script>
+        <![CDATA[
+        import eu.claudius.iacob.maidens.Colors;
+
+        private static const ICON_SIZE:int = 1101;
+        ]]>
+    </fx:Script>
+
+    <!-- states -->
+    <s:states>
+        <mx:State name="up"/>
+        <mx:State name="over" stateGroups="overStates"/>
+        <mx:State name="down" stateGroups="downStates"/>
+        <mx:State name="disabled" stateGroups="disabledStates"/>
+        <mx:State name="upAndSelected" stateGroups="selectedStates, selectedUpStates"/>
+        <mx:State name="overAndSelected" stateGroups="overStates, selectedStates"/>
+        <mx:State name="downAndSelected" stateGroups="downStates, selectedStates"/>
+        <mx:State name="disabledAndSelected" stateGroups="selectedUpStates, disabledStates, selectedStates"/>
+    </s:states>
+
+    <!-- Fill -->
+    <s:Rect id="fill" left="0" right="0" top="0" bottom="0">
+        <s:fill>
+            <mx:SolidColor color="{Colors.CHROME_COLOR}" alpha="0.0001"/>
+        </s:fill>
+    </s:Rect>
+
+    <!-- Specific icon for OFF state -->
+    <s:Graphic version="1.0" viewHeight="{ICON_SIZE}" viewWidth="{ICON_SIZE}" verticalCenter="0" horizontalCenter="0"
+               scaleX="{Math.min (height / ICON_SIZE, width / ICON_SIZE)}"
+               scaleY="{Math.min (height / ICON_SIZE, width / ICON_SIZE)}"
+               visible.up="true" visible.over="true" visible.disabled="true" visible.down="true"
+               visible.selectedStates="false">
+        <s:Group>
+            <s:Group x="177" y="302.93">
+                <s:Path winding="nonZero"
+                        data="M373.43 385C191.93 385 191.93 110 373.43 110 552.867 110 560.622 385 373.43 385ZM373.43 165C263.43 165 263.43 330 373.43 330 483.43 330 483.43 165 373.43 165Z">
+                    <s:fill>
+                        <mx:SolidColor color="{Colors.CHROME_TEXT_SELECTED_COLOR}"
+                                       color.overStates="{Colors.CHROME_TEXT_SELECTED_COLOR_DARKER}"
+                                       alpha.disabledStates="0.4"/>
+                    </s:fill>
+                </s:Path>
+                <s:Path winding="nonZero" data="M373.43 495C237.332 495 107.01 422.702 15.9297 296.615L15.9297 296.615C-5.30957 267.315 -5.30957 227.684 15.9297 198.385 107.01 72.2969 237.332 0 373.43 0 509.527 0 639.85 72.2969 730.93 198.385 752.169 227.685 752.169 267.316 730.93 296.615
+ 639.85 422.702 509.527 495 373.43 495ZM60.3975 264.385C142.292 377.63 253.447 440 373.43 440 493.412 440 604.566 377.63 686.462 264.385 693.77 254.305 693.77 240.668 686.462 230.588 604.566 117.37 493.412 55 373.43 55 253.447 55 142.292 117.37
+ 60.3975 230.615 53.0898 240.695 53.0898 254.332 60.3975 264.412L60.3975 264.385Z">
+                    <s:fill>
+                        <mx:SolidColor color="{Colors.CHROME_TEXT_SELECTED_COLOR}"
+                                       color.overStates="{Colors.CHROME_TEXT_SELECTED_COLOR_DARKER}"
+                                       alpha.disabledStates="0.4"/>
+                    </s:fill>
+                </s:Path>
+            </s:Group>
+        </s:Group>
+    </s:Graphic>
+
+    <!-- Specific icon for ON state -->
+    <s:Graphic version="1.0" verticalCenter="0" horizontalCenter="0" viewHeight="{ICON_SIZE}" viewWidth="{ICON_SIZE}"
+               scaleX="{Math.min (height / ICON_SIZE, width / ICON_SIZE)}"
+               scaleY="{Math.min (height / ICON_SIZE, width / ICON_SIZE)}"
+               visible.upAndSelected="true" visible.overAndSelected="true" visible.disabledAndSelected="true"
+               visible.downAndSelected="true" visible.up="false" visible.over="false" visible.disabled="false"
+               visible.down="false">
+        <s:Group>
+            <s:Group x="176.677" y="302.93">
+                <s:Path winding="nonZero" data="M373.54 330C263.584 330 263.54 165 373.54 165 483.54 165 483.513 330 373.54 330ZM731.147 296.618C639.974 422.705 509.644 495 373.54 495 237.438 495 107.106 422.705 15.9326 296.618 -5.31055 267.318 -5.31055 227.682 15.9326 198.382 107.106
+ 72.2949 237.438 0 373.54 0 509.644 0 639.974 72.2949 731.147 198.382 752.724 227.826 753.19 267.518 731.147 296.618ZM373.513 110C191.969 110 191.946 385 373.513 385 560.731 385 552.991 110 373.513 110Z">
+                    <s:fill>
+                        <mx:SolidColor color="{Colors.CHROME_TEXT_SELECTED_COLOR}"
+                                       color.overStates="{Colors.CHROME_TEXT_SELECTED_COLOR_DARKER}"
+                                       alpha.disabledStates="0.4"/>
+                    </s:fill>
+                </s:Path>
+            </s:Group>
+
+        </s:Group>
+    </s:Graphic>
+
+</s:SparkButtonSkin>

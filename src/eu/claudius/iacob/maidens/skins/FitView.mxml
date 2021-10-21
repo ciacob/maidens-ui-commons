@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:SparkButtonSkin xmlns:fx="http://ns.adobe.com/mxml/2009"
+                   xmlns:s="library://ns.adobe.com/flex/spark"
+                   xmlns:mx="library://ns.adobe.com/flex/mx"
+                   minHeight="22" minWidth="22">
+
+    <fx:Script>
+        <![CDATA[
+        import eu.claudius.iacob.maidens.Colors;
+
+        private static const ICON_SIZE:int = 600;
+        ]]>
+    </fx:Script>
+
+    <!-- host component -->
+    <fx:Metadata>
+        <![CDATA[
+        [HostComponent("spark.components.Button")]
+        ]]>
+    </fx:Metadata>
+
+    <!-- states -->
+    <s:states>
+        <mx:State name="up"/>
+        <mx:State name="over" stateGroups="overStates"/>
+        <mx:State name="down" stateGroups="downStates"/>
+        <mx:State name="disabled" stateGroups="disabledStates"/>
+    </s:states>
+
+    <!-- Fill -->
+    <s:Rect id="fill" left="1" right="1" top="1" bottom="1" radiusX="2">
+        <s:fill>
+            <mx:SolidColor color="{Colors.CHROME_COLOR}" />
+        </s:fill>
+    </s:Rect>
+
+
+    <!-- Specific icon -->
+    <s:Graphic id="specificIcon" viewHeight="{ICON_SIZE}" viewWidth="{ICON_SIZE}" scaleX="{width / ICON_SIZE}"
+               scaleY="{height / ICON_SIZE}">
+        <s:Group>
+            <s:Path winding="nonZero" data="M291.225 279.427C291.881 278.111 291.882 276.138 291.553 274.494L291.553 159.396C291.552 154.793 289.58 150.188 286.62 147.229 283.333 143.94 279.057 142.296 274.452 142.296 264.587 142.296 257.024 149.859 257.024 159.725L257.024 233.387
+ 168.564 144.927C161.658 138.021 150.478 138.021 143.572 144.927 136.667 151.833 136.665 163.013 143.572 169.919L231.703 258.051 158.371 257.722C153.766 257.722 149.163 259.695 146.203 262.654 142.915 265.943 141.27 270.218 141.27 274.822 141.27
+ 279.426 143.244 284.029 146.203 286.989 149.492 290.277 153.766 291.922 158.7 292.252L274.782 291.924C275.44 291.924 277.414 291.923 279.388 291.265 279.717 290.937 280.374 290.937 280.703 290.607 280.703 290.607 280.703 290.607 281.032 290.278
+L283.006 290.278 283.335 289.95 283.993 289.95 288.925 285.018C290.24 283.703 291.227 282.059 291.225 280.742 290.895 281.07 290.895 280.414 291.225 279.427Z">
+                <s:fill>
+                    <mx:SolidColor color="{Colors.PRIMARY_COLOR_ALTERNATE}"
+                                   color.overStates="{Colors.PRIMARY_COLOR}" alpha.disabledStates="0.4"/>
+                </s:fill>
+            </s:Path>
+            <s:Path winding="nonZero" data="M451.378 427.081L363.247 338.949 436.909 338.949C446.774 338.95 454.337 331.387 454.336 321.521 454.336 316.917 452.364 312.313 449.404 309.354 446.444 306.394 441.841 304.42 436.908 304.092L315.563 304.421 314.576 305.407 312.603 305.406
+ 312.274 305.736 311.616 305.736 307.011 310.341C305.697 311.655 304.71 313.299 304.709 314.614 304.38 314.943 304.71 315.273 304.381 315.602L303.396 316.588 303.395 437.604C303.394 442.208 305.369 446.812 308.329 449.771 311.289 452.731 315.891
+ 454.705 320.495 454.704 330.362 454.705 337.924 447.142 337.923 437.275L338.253 363.942 426.385 452.074C433.292 458.979 444.472 458.979 451.376 452.074 458.283 445.169 458.283 433.986 451.378 427.081Z">
+                <s:fill>
+                    <mx:SolidColor color="{Colors.PRIMARY_COLOR_ALTERNATE}"
+                                   color.overStates="{Colors.PRIMARY_COLOR}" alpha.disabledStates="0.4"/>
+                </s:fill>
+            </s:Path>
+            <s:Path winding="nonZero" data="M0 25.1123L0 571.097C0 585.049 11.1616 595.744 24.6489 595.744L571.096 595.744C585.047 595.744 595.745 584.582 595.745 571.097L595.746 24.6484C595.746 10.6963 584.583 0 571.097 0L24.6489 0C11.1616 0.464844 0 11.626 0 25.1123ZM570.167 25.5781
+L570.167 570.632 25.1128 570.632 25.1128 25.5781 570.167 25.5781 570.167 25.5781Z">
+                <s:fill>
+                    <mx:SolidColor color="{Colors.PRIMARY_COLOR_ALTERNATE}"
+                                   color.overStates="{Colors.PRIMARY_COLOR}" alpha.disabledStates="0.4"/>
+                </s:fill>
+            </s:Path>
+        </s:Group>
+    </s:Graphic>
+</s:SparkButtonSkin>

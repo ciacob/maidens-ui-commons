@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<s:SparkButtonSkin xmlns:fx="http://ns.adobe.com/mxml/2009"
+                   xmlns:s="library://ns.adobe.com/flex/spark"
+                   xmlns:mx="library://ns.adobe.com/flex/mx"
+                   minHeight="10"
+                   minWidth="10">
+
+    <!-- host component -->
+    <fx:Metadata>
+		<![CDATA[
+        [HostComponent("spark.components.ToggleButton")]
+        ]]>
+	</fx:Metadata>
+
+    <fx:Script>
+        <![CDATA[
+            import eu.claudius.iacob.maidens.Colors;
+            import eu.claudius.iacob.maidens.Filters;
+        ]]>
+    </fx:Script>
+
+    <!-- states -->
+    <s:states>
+        <mx:State name="up"/>
+        <mx:State name="over" stateGroups="overStates"/>
+        <mx:State name="down" stateGroups="downStates"/>
+        <mx:State name="disabled" stateGroups="disabledStates"/>
+        <mx:State name="upAndSelected" stateGroups="selectedStates, selectedUpStates"/>
+        <mx:State name="overAndSelected" stateGroups="overStates, selectedStates"/>
+        <mx:State name="downAndSelected" stateGroups="downStates, selectedStates"/>
+        <mx:State name="disabledAndSelected" stateGroups="selectedUpStates, disabledStates, selectedStates"/>
+    </s:states>
+
+    <!-- Fill -->
+    <s:Rect id="fill" left="0" right="0" top="0" bottom="0"
+            bottomLeftRadiusX="2" bottomLeftRadiusY="1" bottomRightRadiusX="2" bottomRightRadiusY="1">
+        <s:fill>
+            <mx:SolidColor color="{Colors.KEYBOARD_WHITES}"
+                           color.over="{Colors.BORDER_COLOR}"
+                           color.down="{Colors.PRIMARY_COLOR_ALTERNATE}"
+                           color.selectedStates="{Colors.PRIMARY_COLOR}" />
+        </s:fill>
+        <s:stroke>
+            <mx:SolidColorStroke color="{Colors.BORDER_COLOR}"
+                                color.over="{Colors.BORDER_COLOR_DARKER}"
+                                color.down="{Colors.PRIMARY_COLOR_ALTERNATE}"
+                                color.selectedStates="{Colors.PRIMARY_COLOR}"
+                                alpha.disabledStates="0.4"/>
+        </s:stroke>
+    </s:Rect>
+</s:SparkButtonSkin>
