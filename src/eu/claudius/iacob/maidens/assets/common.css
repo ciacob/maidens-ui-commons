@@ -3,37 +3,18 @@
 @namespace mx "library://ns.adobe.com/flex/mx";
 @namespace mx_internal "mx.core.mx_internal";
 
-@font-face {
-	fontFamily:"Maidens";
-	src: url("../typography/Maidens.ttf");
-	fontStyle: normal;
-	fontWeight: normal; 
-	advancedAntiAliasing: true;
-	embedAsCFF: false;
-}
-
-@font-face {
-	fontFamily:"Maidens";
-	src: url("../typography/Maidens.ttf");
-	fontStyle: normal;
-	fontWeight: normal;
-	embedAsCFF: true;
-}
-
-@font-face {
-	fontFamily:"Maidens";
-	src: url("../typography/Maidens Headers.ttf");
-	fontStyle: normal;
-	fontWeight: bold; 
-	advancedAntiAliasing: true;
-	embedAsCFF: false;
-}
+/**
+ * NOTE: 
+ * Starting with MAIDENS 1.5.1, fonts are embedded via the "maidens-font-commons"
+ * library. No need to embed them here anymore. Font names used below are those
+ * provided by the library, e.g., "maidens_embedded".
+ */
 
 /**
  * Global defaults
  */
 global {
-	fontFamily: "Maidens";
+	fontFamily: "maidens_embedded";
 	chromeColor: #E5E3E3;
 	borderColor: #BCBCBC;
 	color: #474747;
