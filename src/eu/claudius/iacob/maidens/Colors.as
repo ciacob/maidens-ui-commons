@@ -1,12 +1,24 @@
 package eu.claudius.iacob.maidens {
+	import mx.core.FlexGlobals;
 	import mx.utils.ColorUtil;
 
 	public final class Colors {
 		public function Colors() {}
 
+		// Lazy instantiation; requires style-valid calling context.
+		private static var _color : Number;
+		public static function get ICON_COLOR () : uint {
+			if (isNaN(_color)) {
+				_color = FlexGlobals.topLevelApplication.getStyle('iconColor');
+				_color = ColorUtil.adjustBrightness2 (_color, -25);
+			}
+			return _color;
+		};
+
 		// Branding and general UI
 		public static const PRIMARY_COLOR : uint = 0xED7D03;
 		public static const PRIMARY_COLOR_BRIGHT : uint = ColorUtil.adjustBrightness2(PRIMARY_COLOR, 50);
+		public static const PRIMARY_COLOR_DARK : uint = ColorUtil.adjustBrightness2(PRIMARY_COLOR, -50);
 		public static const PRIMARY_COLOR_ALTERNATE : uint = 0xc1823e;
 		public static const SPLASH_TEXT_BACKROUND : uint = ColorUtil.adjustBrightness(PRIMARY_COLOR, 25);
 		public static const SPLASH_TEXT_FOREGROUND : uint = 0xffffff;

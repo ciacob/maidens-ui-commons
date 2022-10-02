@@ -150,6 +150,9 @@ global {
 }
 
 /* Amendments to default skin */
+mx|LinkButton {
+	textDecoration: underline;
+}
 mx|Menu {
 	paddingTop: 2px;
 	paddingBottom: 3px;

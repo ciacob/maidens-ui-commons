@@ -53,6 +53,7 @@ package eu.claudius.iacob.maidens {
 		public static const MIN_SCALE_INTERVALS_WINDOW_BOUNDS : Rectangle = new Rectangle(0,0,400,540);
 		public static const FULL_HD_THRESHOLD_BOUNDS : Rectangle = new Rectangle(0, 0,1920, 1080);
 		public static const GENERATION_PROGRESS_WINDOW_BOUNDS : Rectangle = new Rectangle (0, 0, 440, 280);
+		public static const RENDER_PROGRESS_WINDOW_BOUNDS : Rectangle = new Rectangle (0, 0, 440, 280);
 		public static const SPLASH_RIGHT_MARGIN : int = 110;
 		public static const SPLASH_BOTTOM_MARGIN : int = 95;
 		public static const SPLASH_BASE_FONT_SIZE : uint = 12;
