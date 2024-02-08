@@ -1,1 +1,17 @@
-<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" x="0px" y="0px" viewBox="0 0 100 125"><g transform="translate(0,-952.36218)"><path style="text-indent:0;text-transform:none;direction:ltr;block-progression:tb;baseline-shift:baseline;color:#000000;enable-background:accumulate;" d="m 50.000003,961.36217 c -12.15341,0 -22,9.84663 -22,22.00003 l 0,12 -6.000005,0 c -3.289407,0 -6,2.7106 -6,6 l 0,36 c 0,3.2894 2.710593,6 6,6 l 56.000004,0 c 3.28941,0 6,-2.7106 6,-6 l 0,-36 c 0,-3.2894 -2.71059,-6 -6,-6 l -6,0 0,-12 c 0,-12.1534 -9.846589,-22.00003 -22,-22.00003 z m 0,4.00003 c 10.00659,0 17.999999,7.9934 17.999999,18 l 0,12 -36,0 0,-12 c 0,-10.0066 7.9934,-18 18,-18 z m -28.000005,34 56.000004,0 c 1.1426,0 2,0.8574 2,2 l 0,36 c 0,1.1426 -0.8574,2 -2,2 l -56.000005,0 c -1.142596,0 -2,-0.8574 -2,-2 l 0,-36 c 0,-1.1426 0.857404,-2 2,-2 z m 28.000005,12 c -4.39459,0 -8,3.6054 -8,8 0,4.3946 3.60541,8 8,8 4.39459,0 7.999999,-3.6054 7.999999,-8 0,-4.3946 -3.60541,-8 -8,-8 z m 0,4 c 2.232829,0 3.999999,1.7672 3.999999,4 0,2.2328 -1.76717,4 -4,4 -2.23284,0 -4,-1.7672 -4,-4 0,-2.2328 1.76716,-4 4,-4 z" fill="#000000" fill-opacity="1" stroke="none" marker="none" visibility="visible" display="inline" overflow="visible"/></g><text x="0" y="115" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by Aya Sofya</text><text x="0" y="120" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 id="Layer_1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="54.4px" height="65.6px"
+	 viewBox="22.8 7.2 54.4 65.6" enable-background="new 22.8 7.2 54.4 65.6" xml:space="preserve">
+<g transform="translate(0,-952.36218)">
+	<path d="M50,959.562c-9.723,0-17.6,7.877-17.6,17.6v9.6h-4.8c-2.632,0-4.8,2.168-4.8,4.8v28.8c0,2.631,2.168,4.8,4.8,4.8h44.8
+		c2.631,0,4.8-2.169,4.8-4.8v-28.8c0-2.632-2.169-4.8-4.8-4.8H67.6v-9.6C67.6,967.439,59.723,959.562,50,959.562z M50,962.762
+		c8.006,0,14.4,6.395,14.4,14.4v9.6H35.6v-9.6C35.6,969.157,41.995,962.762,50,962.762z M27.6,989.962h44.8
+		c0.914,0,1.6,0.686,1.6,1.6v28.8c0,0.914-0.686,1.6-1.6,1.6H27.6c-0.914,0-1.6-0.686-1.6-1.6v-28.8
+		C26,990.648,26.686,989.962,27.6,989.962L27.6,989.962z M50,999.562c-3.516,0-6.4,2.884-6.4,6.399c0,3.516,2.884,6.4,6.4,6.4
+		s6.4-2.885,6.4-6.4C56.4,1002.447,53.516,999.562,50,999.562z M50,1002.762c1.786,0,3.2,1.415,3.2,3.2c0,1.787-1.414,3.2-3.2,3.2
+		s-3.2-1.413-3.2-3.2C46.8,1004.177,48.214,1002.762,50,1002.762z"/>
+</g>
+</svg>
