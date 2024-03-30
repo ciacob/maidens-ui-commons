@@ -1,5 +1,4 @@
 package eu.claudius.iacob.maidens {
-	import mx.core.FlexGlobals;
 	import mx.utils.ColorUtil;
 
 	public final class Colors {
@@ -11,7 +10,7 @@ package eu.claudius.iacob.maidens {
 		public static const PRIMARY_COLOR_BRIGHT : uint = ColorUtil.adjustBrightness2(PRIMARY_COLOR, 50);
 		public static const PRIMARY_COLOR_DARK : uint = ColorUtil.adjustBrightness2(PRIMARY_COLOR, -50);
 		public static const PRIMARY_COLOR_ALTERNATE : uint = 0xc1823e;
-		public static const SPLASH_TEXT_BACKROUND : uint = ColorUtil.adjustBrightness(PRIMARY_COLOR, 25);
+		public static const SPLASH_TEXT_BACKGROUND : uint = ColorUtil.adjustBrightness(PRIMARY_COLOR, 25);
 		public static const SPLASH_TEXT_FOREGROUND : uint = 0xffffff;
 		public static const CHROME_COLOR : uint =  0xE5E3E3;
 		public static const CHROME_COLOR_DARKER : uint = ColorUtil.adjustBrightness2(CHROME_COLOR, -15);
