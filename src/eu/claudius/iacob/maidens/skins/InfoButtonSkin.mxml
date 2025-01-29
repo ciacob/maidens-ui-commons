@@ -14,7 +14,7 @@
     <fx:Script>
         <![CDATA[
             import eu.claudius.iacob.maidens.Colors;
-
+            
             private static const ICON_SIZE:int = 34;
         ]]>
     </fx:Script>
@@ -34,29 +34,45 @@
     <!-- Fill -->
     <s:Rect id="fill" left="0" right="0" top="0" bottom="0">
         <s:fill>
-            <mx:SolidColor color="{Colors.CHROME_COLOR}" />
+            <mx:SolidColor color="{Colors.CHROME_COLOR}"/>
         </s:fill>
         <s:stroke>
             <mx:SolidColorStroke color="{Colors.PRIMARY_COLOR_ALTERNATE}"
-                           color.overStates="{Colors.PRIMARY_COLOR}" alpha.disabledStates="0.4"/>
+                                 color.overStates="{Colors.PRIMARY_COLOR}" alpha.disabledStates="0.4"/>
         </s:stroke>
     </s:Rect>
 
     <!-- Specific icon -->
-    <s:Graphic version="1.0" verticalCenter="0" horizontalCenter="0" viewHeight="{ICON_SIZE}" viewWidth="{ICON_SIZE}"
-               scaleX="{(width / ICON_SIZE) * 0.5}" scaleY="{(height / ICON_SIZE) * 0.5}">
-        <s:Group>
-            <s:Path winding="nonZero" data="M17.1001 0C7.65576 0 0 7.65576 0 17.1001 0 26.5444 7.65576 34.1997 17.1001 34.1997 26.5444 34.1997 34.1997 26.5444 34.1997 17.1001 34.1997 7.65576 26.5444 0 17.1001 0ZM17.1001 6.29346C18.7788 6.29346 20.1401 7.65479 20.1401 9.3335 20.1401
-				  11.0127 18.7788 12.3735 17.1001 12.3735 15.4214 12.3735 14.0601 11.0127 14.0601 9.3335 14.0601 7.65479 15.4214 6.29346 17.1001 6.29346ZM21.6606 27.147C21.6606 27.5659 21.3198 27.7407 20.8999 27.7407L13.3003 27.7407C12.8804 27.7407 12.54 27.5659
-				  12.54 27.147L12.54 26.7661C12.54 26.3462 12.8804 25.8403 13.3003 25.8403L14.0601 25.8403 14.0601 16.3403 13.3003 16.3403C12.8804 16.3403 12.54 16.166 12.54 15.7466L12.54 15.3667C12.54 14.9468 12.8804 14.4399 13.3003 14.4399L19.3794 14.4399C19.7993
-				  14.4399 20.1401 14.9468 20.1401 15.3667L20.1401 15.7466 20.1401 25.8403 20.8999 25.8403C21.3198 25.8403 21.6606 26.3462 21.6606 26.7661L21.6606 27.147Z">
+    <s:Graphic version="1.0"
+               visible="true" visible.selectedStates="false"
+               verticalCenter="0" horizontalCenter="0"
+               viewHeight="{ICON_SIZE}" viewWidth="{ICON_SIZE}"
+               scaleX="{width / ICON_SIZE}" scaleY="{height / ICON_SIZE}">
+        <s:Group verticalCenter="0" horizontalCenter="0">
+            <s:Path winding="nonZero" data="M2.63721 0C3.98682 0 5.08057 1.09521 5.08057 2.44336 5.08057 3.79346 3.98682 4.88623 2.63721 4.88623 1.28711 4.88623 0.194336 3.79199 0.194336 2.44336 0.194336 1.09521 1.28809 0 2.63721 0ZM5.27588 16.0903C5.27588 17.1235 4.43799 17.9624 3.40479 17.9624L1.87109 17.9624C0.837402 17.9624 0 17.1235 0 16.0903L0 8.29639C0 7.26318 0.837402 6.42529 1.87109 6.42529L3.40479 6.42529C4.43799 6.42529 5.27588 7.26318 5.27588 8.29639L5.27588 16.0903Z">
                 <s:fill>
                     <mx:SolidColor color="{Colors.PRIMARY_COLOR_ALTERNATE}"
-                                   color.overStates="{Colors.PRIMARY_COLOR}" alpha.disabledStates="0.4"/>
+                                   color.overStates="{Colors.PRIMARY_COLOR}" 
+                                   alpha.disabledStates="0.4"/>
                 </s:fill>
             </s:Path>
         </s:Group>
     </s:Graphic>
 
+    <s:Graphic version="1.0"
+               visible="false" visible.selectedStates="true"
+               verticalCenter="0" horizontalCenter="0"
+               viewHeight="{ICON_SIZE}" viewWidth="{ICON_SIZE}"
+               scaleX="{width / ICON_SIZE}" scaleY="{height / ICON_SIZE}">
+        <s:Group verticalCenter="0" horizontalCenter="0">
+            <s:Path winding="nonZero" data="M30.6748 0L1.3252 0C0.575195 0 0 0.600098 0 1.3252L0 30.7002C0 31.4502 0.600098 32.0254 1.3252 32.0254L30.7002 32.0254C31.4502 32.0254 32.0254 31.4238 32.0254 30.7002L32.0254 1.3252C32 0.600098 31.4004 0 30.6748 0ZM16.0005 6.86328C17.3496 6.86328 18.4434 7.95801 18.4434 9.30664 18.4434 10.6563 17.3496 11.75 16.0005 11.75 14.6509 11.75 13.5571 10.6563 13.5571 9.30664 13.5571 7.95801 14.6509 6.86328 16.0005 6.86328ZM18.6387 22.9531C18.6387 23.9873 17.8008 24.8252 16.7676 24.8252L15.2334 24.8252C14.1997 24.8252 13.3623 23.9873 13.3623 22.9531L13.3623 15.1592C13.3623 14.126 14.1997 13.2881 15.2334 13.2881L16.7676 13.2881C17.8008 13.2881 18.6387 14.126 18.6387 15.1592L18.6387 22.9531Z">
+                <s:fill>
+                    <mx:SolidColor color="{Colors.PRIMARY_COLOR_ALTERNATE}"
+                                   color.overStates="{Colors.PRIMARY_COLOR}" 
+                                   alpha.disabledStates="0.4"/>
+                </s:fill>
+            </s:Path>
+        </s:Group>
+    </s:Graphic>
 
 </s:Skin>
