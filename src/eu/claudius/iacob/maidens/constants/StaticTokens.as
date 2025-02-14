@@ -72,7 +72,7 @@ package eu.claudius.iacob.maidens.constants {
 		public static const PART_RANGE:String = 'Concert pitch range: %s  to  %s';
 		public static const RANGE_SHORT:String = '%s  to  %s';
 		public static const PART_TRANSPOSITION:String = 'Transposition: %s';
-		public static const PROJECT_ALREADY_SAVED:String = 'Project is at its last saved state.';
+		public static const PROJECT_ALREADY_SAVED:String = 'No changes to save.';
 		public static const PROJECT_GENERATORS_FAILED:String = '${failedNum} Generator(s) could not be initialized: ${failedEnum}.';
 		public static const PROJECT_GENERATORS_MISSING:String = '${missingNum} Generator(s) missing: ${missingEnum}.';
 		public static const REST:String = 'rest';
