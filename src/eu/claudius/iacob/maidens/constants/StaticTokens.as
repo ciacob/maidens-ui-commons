@@ -120,7 +120,7 @@ package eu.claudius.iacob.maidens.constants {
 		public static const TRANSPOSE_WINDOW_TITLE : String = 'Transpose %s';
 		public static const DIRECTION : String = 'Direction';
 		public static const INTERVAL : String = 'Interval';
-		public static const INTERVAL_INFO : String = '%s - %d semitone(s)';
+		public static const INTERVAL_INFO : String = '%s - %d %s';
 		public static const ADDITIONAL_OCTAVES : String = 'Additional octaves';
 		public static const MAINTAIN_EXISTING_NOTES : String = 'Keep existing';
 		public static const CHROMATIC_TRANSPOSITION_INFO : String = 'Perform chromatic transposition of selected material';
