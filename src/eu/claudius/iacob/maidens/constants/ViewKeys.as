@@ -32,6 +32,7 @@ public final class ViewKeys {
     public static const PAGES_NUMBER:String = 'pagesNumber';
     public static const NO_SCORE:String = 'noScore';
     public static const CUT_ELEMENT_AVAILABLE:String = 'cutElementAvailable';
+    public static const DEBUG_TOOLS_VISIBILITY:String = 'debugToolsVisibility';
     public static const DATA_AT_STAKE:String = 'dataAtStake';
     public static const DATA_SOURCE:String = 'dataSource';
     public static const DATA_STATUS:String = 'dataStatus';
