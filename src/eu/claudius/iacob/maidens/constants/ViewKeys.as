@@ -94,7 +94,6 @@ public final class ViewKeys {
     public static const NEED_SUITABLE_DIVISIONS_LIST:String = 'needSuitableDivisionsList';
     public static const NEED_TIME_SIGNATURE_DATA:String = 'needTimeSignatureData';
     public static const NEED_UID_FOR_ANNOTATION:String = 'needUidForAnnotation';
-    public static const NEED_VOICE_DATA:String = 'needVoiceData';
     public static const NEED_VOICE_TWO_ADDED:String = 'needVoiceTwoAdded';
     public static const NUDGE_ELEMENT_DOWN_AVAILABLE:String = 'nudgeElementDownAvailable';
     public static const NUDGE_ELEMENT_UP_AVAILABLE:String = 'nudgeElementUpAvailable';
@@ -157,7 +156,6 @@ public final class ViewKeys {
     public static const USER_APPLIES_CHANGES:String = 'commitEditorChanges';
     public static const USER_OPERATION:String = 'userOperation';
     public static const USER_RESETS_CHANGES:String = 'USER_RESETS_CHANGES';
-    public static const VOICE_DATA_READY:String = 'voiceDataReady';
     public static const VOICE_DURATION:String = 'voiceDuration';
     public static const WINDOW_TITLE:String = 'windowTitle';
     public static const NEED_UID_FOR_PART_ANNOTATION:String = 'needUidForPartAnnotation';
